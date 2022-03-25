@@ -4,9 +4,9 @@
 ![codacy](https://img.shields.io/badge/codacy-A-green)
 ![uptime](https://img.shields.io/badge/uptime-100%25-brightgreen)
 
-[![GitHub issues](https://img.shields.io/github/issues/wiseweb-works/openvpn-most-secure-instal)](https://github.com/wiseweb-works/openvpn-most-secure-instal/issues)
-[![GitHub forks](https://img.shields.io/github/forks/wiseweb-works/openvpn-most-secure-instal)](https://github.com/wiseweb-works/openvpn-most-secure-instal/network)
-[![GitHub license](https://img.shields.io/github/license/wiseweb-works/openvpn-most-secure-instal)](https://github.com/wiseweb-works/openvpn-most-secure-instal)
+[![GitHub issues](https://img.shields.io/github/issues/wiseweb-works/openvpn-most-secure-install)](https://github.com/wiseweb-works/openvpn-most-secure-install/issues)
+[![GitHub forks](https://img.shields.io/github/forks/wiseweb-works/openvpn-most-secure-install)](https://github.com/wiseweb-works/openvpn-most-secure-install/network)
+[![GitHub license](https://img.shields.io/github/license/wiseweb-works/openvpn-most-secure-install)](https://github.com/wiseweb-works/openvpn-most-secure-install)
 
 Debian ve Ubuntu için OpenVPN yükleyicisi ([Angristan'ın projesinin](https://github.com/angristan/openvpn-install) katkısıyla)
 
