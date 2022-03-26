@@ -112,7 +112,7 @@ export AUTO_INSTALL=y
 Komut dosyası şu işletim sistemini ve mimarileri destekler:
 
 |                 | i386 | amd64 | armhf | arm64 |
-|  | - | -- | -- | -- |
+| --------------- | ---- | ----- | ----- | ----- |
 | Amazon Linux    | ❌   | ❌   | ❌    | ❌   |
 | Arch Linux      | ❌   | ❌   | ❌    | ❌   |
 | CentOS          | ❌   | ❌   | ❌    | ❌   |
