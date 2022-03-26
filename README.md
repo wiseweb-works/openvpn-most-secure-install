@@ -15,7 +15,7 @@ Bu komut dosyası, yalnızca birkaç dakika içinde kendi güvenli VPN sunucunuz
 <details>
 <summary>Ayrıntılar</summary>
 
-# Fihriste
+### Fihriste
 
 - [Özet](#özet)
   - [Kullanım](#kullanım)
@@ -24,6 +24,10 @@ Bu komut dosyası, yalnızca birkaç dakika içinde kendi güvenli VPN sunucunuz
   - [Uyumluluk](#uyumluluk)
   - [Proje eski yöneticileri](#proje-eski-yöneticileri)
   - [SSS](#sss)
+    - [1. Hangi VPS/VDS sağlayıcıyı önerirsiniz ?](#1-hangi-vpsvds-sağlayıcıyı-önerirsiniz-)
+    - [2. Hangi OpenVPN istemcisini önerirsiniz ?](#2-hangi-openvpn-istemcisini-önerirsiniz-)
+    - [3. NSA'dan/Devletten güvende miyim ?](#3-projenizdeki-scripti-kullanarak-nsadandevletten-güvende-miyim-)
+    - [4. OpenVPN için `man/manual` belgeleri var mı ?](#4-openvpn-için-manmanual-belgeleri-var-mı-)  
   - [Katkı](#katkı)
     - [Kod biçimlendirme](#kod-biçimlendirme)
   - [Güvenlik ve Şifreleme](#güvenlik-ve-şifreleme)
@@ -37,7 +41,6 @@ Bu komut dosyası, yalnızca birkaç dakika içinde kendi güvenli VPN sunucunuz
     - [`tls-auth` ve `tls-crypt`](#tls-auth-ve-tls-crypt)
   - [Atıf ve Lisans](#atıf-ve-lisans)
 - [Son](#son)
-
 </details>
 
 ## Kullanım
@@ -46,7 +49,7 @@ Bu komut dosyası, yalnızca birkaç dakika içinde kendi güvenli VPN sunucunuz
 
 ```bash
 curl -O https://raw.githubusercontent.com/wiseweb-works/openvpn-most-secure-install/master/openvpn-most-secure-install.sh
-chmod +x openvpn-most-safe-install.sh
+chmod +x openvpn-most-secure-install.sh
 ```
 
 Ardından kodumuzu çalıştıralım:
@@ -109,7 +112,7 @@ export AUTO_INSTALL=y
 Komut dosyası şu işletim sistemini ve mimarileri destekler:
 
 |                 | i386 | amd64 | armhf | arm64 |
-| --------------- | ---- | ----- | ----- | ----- |
+|  | - | -- | -- | -- |
 | Amazon Linux    | ❌   | ❌   | ❌    | ❌   |
 | Arch Linux      | ❌   | ❌   | ❌    | ❌   |
 | CentOS          | ❌   | ❌   | ❌    | ❌   |
@@ -136,41 +139,29 @@ Benim projem sadece son dağıtımları desteklemek üzerine odaklanmıştır, b
 
 ## SSS
 
-[Wiki](/wiki) bölümünde daha fazla Soru-Cevap bulabilirsiniz.
+[Wiki](../../wiki) bölümünde daha fazla Soru-Cevap bulabilirsiniz.
 
-**S:** Hangi VPS/VDS sağlayıcıyı önerirsiniz?
+### 1. Hangi VPS/VDS sağlayıcıyı önerirsiniz ?
+- Bunları tavsiye ederim:
+ - [Vultr](https://www.vultr.com/): Dünya çapında konumlar
+ - [Hetzner](https://hetzner.cloud/): Almanya
+ - [Digital Ocean](https://digitalocean.com/): Dünya çapında konumlar
+ - [Oracle Always Free](https://www.oracle.com/tr/cloud/free/): Dünya çapında konumlar, Aylık 4vCpu ve 24 GB Ram'e kadar ücretsiz
 
-**C:** Bunları tavsiye ederim:
+### 2. Hangi OpenVPN istemcisini önerirsiniz ?
+- Resmi bir OpenVPN => 2.4 istemcisi. Mümkünse en son versiyonu [Github Sayfasından](https://github.com/OpenVPN/openvpn/tags) indirin.
+ - Windows: [Resmi OpenVPN topluluk istemcisi](https://openvpn.net/index.php/download/community-downloads.html).
+ - Linux: Dağıtımınızdaki `openvpn` paketi. Debian/Ubuntu tabanlı dağıtımlarınız için bir [resmi APT deposu](https://community.openvpn.net/openvpn/wiki/OpenvpnSoftwareRepos) vardır.
+ - macOS: [Mac için Resmi İstemci](https://openvpn.net/client-connect-vpn-for-mac-os/)
+ - Android: [Android için OpenVPN](https://play.google.com/store/apps/details?id=de.blinkt.openvpn).
+ - iOS: [Resmi OpenVPN Connect istemcisi](https://itunes.apple.com/us/app/openvpn-connect/id590379981).
 
-- [Vultr](https://www.vultr.com/): Dünya çapında konumlar
-- [Hetzner](https://hetzner.cloud/): Almanya
-- [Dijital Ocean](https://digitalocean.com/): Dünya çapında konumlar
-- [Oracle Always Free](https://www.oracle.com/tr/cloud/free/): Dünya çapında konumlar, Aylık 4vCpu ve 24 GB Ram'e kadar ücretsiz
----
+### 3. Projenizdeki scripti kullanarak NSA'dan/Devletten güvende miyim ?
+- Lütfen tehdit modellerinizi inceleyin. Bu komut dosyası aslında oldukças güvenli ve gizlilik öncelikli olsa da size kesinlikle böyle bir söz veremez. Çünkü hiçbir zaman için bir sistem %100 güvenli değildir.
 
-**S:** Hangi OpenVPN istemcisini önerirsiniz?
+### 4. OpenVPN için `man/manual` belgeleri var mı ?
+- Evet, lütfen tüm seçeneklere atıfta bulunan [OpenVPN Kılavuzuna](https://community.openvpn.net/openvpn/wiki/Openvpn24ManPage) gidin.
 
-**C:** Resmi bir OpenVPN => 2.4 istemcisi. Mümkünse en son versiyonu [Github Sayfasından](https://github.com/OpenVPN/openvpn/tags) indirin.
-
-- Windows: [Resmi OpenVPN topluluk istemcisi](https://openvpn.net/index.php/download/community-downloads.html).
-- Linux: Dağıtımınızdaki `openvpn` paketi. Debian/Ubuntu tabanlı dağıtımlarınız için bir [resmi APT deposu](https://community.openvpn.net/openvpn/wiki/OpenvpnSoftwareRepos) vardır.
-- macOS: [Mac için Resmi İstemci](https://openvpn.net/client-connect-vpn-for-mac-os/)
-- Android: [Android için OpenVPN](https://play.google.com/store/apps/details?id=de.blinkt.openvpn).
-- iOS: [Resmi OpenVPN Connect istemcisi](https://itunes.apple.com/us/app/openvpn-connect/id590379981).
-
----
-
-**S:** Projenizdeki scripti kullanarak NSA'dan/Devletten güvende miyim?
-
-**Y:** Lütfen tehdit modellerinizi inceleyin. Bu komut dosyası aslında oldukças güvenli ve gizlilik öncelikli olsa da size kesinlikle böyle bir söz veremez. Çünkü hiçbir zaman için bir sistem %100 güvenli değildir.
-
----
-
-**S:** OpenVPN için `man/manual` belgeleri var mı?
-
-**Y:** Evet, lütfen tüm seçeneklere atıfta bulunan [OpenVPN Kılavuzuna](https://community.openvpn.net/openvpn/wiki/Openvpn24ManPage) gidin.
-
----
 ## Katkı
 
 ### Kod biçimlendirme

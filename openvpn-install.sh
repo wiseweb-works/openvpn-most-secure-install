@@ -1219,9 +1219,9 @@ fi
 function manageMenu() {
 	echo "openvpn-most-güvenli-kurulumuna hoş geldiniz!"
 	echo "Git deposu şu adreste mevcuttur: https://github.com/wiseweb-works/openvpn-most-secure-install"
-	Eko ""
+	echo ""
 	echo "OpenVPN zaten kurulu gibi görünüyor."
-	Eko ""
+	echo ""
 	echo "Ne yapmak istiyorsunuz?"
 	echo " 1) Yeni bir kullanıcı ekleyin"
 	echo " 2) Mevcut kullanıcıyı iptal et"
